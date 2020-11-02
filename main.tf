@@ -1,8 +1,3 @@
-locals{
-    default_scaling_configuration_path = "${path.module}/${var.lambda_name}.json"
-    # config = jsondecode(file(var.scaling_configuration_path))
-}
-
 variable "lambda_name" {
   type = string
 }
