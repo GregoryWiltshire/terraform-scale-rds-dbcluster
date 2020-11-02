@@ -17,7 +17,7 @@ module "scale_rds_down" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | lambda_name | Name for your lambda. | `string` | `""` | yes |
-| scaling_configuration_path | Path to your json (scaling configuration)[https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster]. | `string` | n/a | yes |
-| schedule_expression | The AWS (cloudwatch events)[https://docs.aws.amazon.com/lambda/latest/dg/services-cloudwatchevents-expressions.html] expression to trigger your scaling config change. | `string` | n/a | yes |
+| scaling_configuration_path | Path to your json [scaling configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster). | `string` | n/a | yes |
+| schedule_expression | The AWS [cloudwatch events](https://docs.aws.amazon.com/lambda/latest/dg/services-cloudwatchevents-expressions.html) expression to trigger your scaling config change. | `string` | n/a | yes |
 | target_cluster | Target a single cluster by it's dbclusterid | `string` | `""` | no |
 
