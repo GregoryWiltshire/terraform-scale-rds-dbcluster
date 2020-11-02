@@ -1,7 +1,7 @@
 # terraform-scale-rds-dbcluster
 This is a simple module which allows you to generate lambdas triggered by cloudwatch schedule expressions to apply a ScalingConfiguration change to your rds clusters.
 
-## Example module to scale RDS clusters down every Friday at 10pm
+## Example: scale RDS clusters down every Friday at 10pm
 ```hcl
 module "scale_rds_down" {
     source = "github.com/GregoryWiltshire/terraform-scale-rds-dbcluster"
